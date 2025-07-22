@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke
+    background-color: lightsteelblue
     ;
     font-family: Arial, sans-serif;
     }
@@ -18,7 +18,7 @@ p {
 
 
 ul {
-  list-style-type: square;
+  list-style-type: disc;
 }
 ul li::marker {
   color: palevioletred;
