@@ -20,7 +20,9 @@ p {
 ul {
   list-style-type: square;
 }
-
+ul li::marker {
+  color: palevioletred;
+  }
 li {
   color: cyan;
 }
