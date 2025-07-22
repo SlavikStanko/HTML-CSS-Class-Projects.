@@ -1,11 +1,12 @@
 body {
-    background-color: lightyellow;
+    background-color: whitesmoke
+    ;
     font-family: Arial, sans-serif;
     }
 
 
 h1 {
-  color: lightcoral;
+  color: darkgreen;
   text-align: center;
 }
 
@@ -31,10 +32,10 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* Styled Box */
+
 .styled-box {
   border: 2px solid;
   background-color: lightgray;
