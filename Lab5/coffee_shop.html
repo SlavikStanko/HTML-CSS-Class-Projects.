@@ -6,6 +6,99 @@
   <title>Java Haven</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f3f0;
+  color: #3e2f1c;
+}
+
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #6f4e37;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #d9b99b;
+  padding: 1rem;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #3e2f1c;
+  font-weight: bold;
+}
+
+.main-content {
+  grid-area: main;
+  padding: 2rem;
+  background-color: #fff8f0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.flex-item {
+  background-color: #f2e6d9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #6f4e37;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 600px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
 <body>
   <header class="header">
     <h1>Java Haven</h1>
